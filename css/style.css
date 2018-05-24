@@ -1,0 +1,61 @@
+@font-face {
+    font-family: TriforceFont;
+    src: url('../fonts/Triforce.ttf');
+}
+
+@font-face {
+	font-family: GanonFont;
+	src: url('../fonts/ReturnofGanon.ttf');
+}
+
+/* Customize the navbar links to be fill the entire space of the .navbar */
+.navbar .navbar-inner {
+    padding: 0;
+}
+
+.navbar .nav {
+    margin: 0;
+    display: table;
+    width: 100%;
+}
+
+.navbar .nav li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+}
+
+.navbar .nav li a {
+    font-weight: bold;
+    text-align: center;
+	color: green;
+}
+
+body {
+	padding-top: 40px;
+    background: url('../css/sebastian-unrau-47679-unsplash.jpg');
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+	font-family: TriforceFont;
+	color: #d4ce46;
+	/*color: #fdffe0;*/
+	font-size: 65px;
+}
+
+.maincontent {
+	background: rgba(74, 186, 145, 0.5);
+	/*background-color: #92c582;*/
+	font-family: GanonFont;
+	color: white;
+}
+
+.separatorimg {
+	content:url('../css/Vintage-Decorative-Divider.png');
+    display: block;
+    margin-left: 28%;
+    margin-right: auto;
+}
