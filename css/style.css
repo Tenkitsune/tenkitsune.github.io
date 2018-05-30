@@ -33,7 +33,7 @@
 
 body {
 	padding-top: 40px;
-    background: url('../css/sebastian-unrau-47679-unsplash.jpg');
+    background: url('../images/2h.jpg');
 	background-repeat:no-repeat;
 	background-attachment: fixed;
     background-size: cover;
@@ -41,21 +41,64 @@ body {
 
 h1 {
 	font-family: TriforceFont;
-	color: #d4ce46;
+	color: #FFBD2F;
 	/*color: #fdffe0;*/
 	font-size: 65px;
 }
 
 .maincontent {
-	background: rgba(74, 186, 145, 0.5);
+	/*background: rgba(74, 186, 145, 0.25);*/
+	/*background: rgba(212, 180, 81, 0.25);*/
 	/*background-color: #92c582;*/
 	font-family: GanonFont;
 	color: white;
 }
 
 .separatorimg {
-	content:url('../css/Vintage-Decorative-Divider.png');
+	content:url('../images/Vintage-Decorative-Divider.png');
     display: block;
     margin-left: 28%;
     margin-right: auto;
+}
+
+.yellowborderdiv {
+	padding-top: 500px;
+	background: rgba(0, 0, 0, 0.25);
+	border: 15px solid transparent;
+    padding: 15px;
+    border-image:url('../images/yellowbordersmol.png') 41% stretch;
+	-webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.greenborderdiv {
+	padding-top: 500px;
+	background: rgba(0, 0, 0, 0.25);
+	border: 15px solid transparent;
+    padding: 15px;
+    border-image:url('../images/greenbordersmol.png') 41% stretch;
+	-webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.mainimg {
+	content:url('../images/triheartline.png');
+    display: block;
+    margin-left: 43%;
+	padding-top: 40px;
+}
+
+.mapimg {
+	content:url('../images/pooreditbotwmap.png');
+	border: 10px solid transparent;
+	background: white;
+	margin-left: 7.5%
+}
+
+.realmapimg {
+	margin-left: 22.5%
+}
+
+.fontent {
+	font-size: 25px;
 }
