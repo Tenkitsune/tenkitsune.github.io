@@ -55,10 +55,15 @@ h1 {
 }
 
 .separatorimg {
-	content:url('../images/Vintage-Decorative-Divider.png');
     display: block;
 	max-width: 100%;
 	height: auto;
+}
+
+.mainimg {
+    display: block;
+	padding-top: 40px;
+	max-width: 100%
 }
 
 .yellowborderdiv {
@@ -81,32 +86,19 @@ h1 {
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
 
-.mainimg {
-	content:url('../images/triheartline.png');
-    display: block;
-	padding-top: 40px;
-	max-width: 100%
-}
-
-/* For devices smaller than 400px: */
-.mapimg {
-	content:url('../images/pooreditbotwmap.png');
+.mapimg { 
 	border: 10px solid transparent;
 	background: white;
-	max-width: 100%;
-	height: auto;
 }
 
-/* For devices 400px and larger: */
+/* 1200px and larger: */
 @media only screen and (min-width: 1200px) {
     .mapimg { 
-		content:url('../images/pooreditbotwmap.png');
 		border: 10px solid transparent;
 		background: white;
 		margin-left: 7.5%;
     }
 }
-
 
 .realmapimg {
 	margin-left: 22.5%
@@ -114,4 +106,28 @@ h1 {
 
 .fontent {
 	font-size: 25px;
+}
+
+.leftdiv {
+	float: left;
+    width: 47%;
+}
+.rightdiv {
+    margin-left: 53%;
+}
+
+.leftabouttitle {
+	font-family: TriforceFont;
+	color: pink;
+	font-size: 30px;
+}
+
+.rightabouttitle {
+	font-family: TriforceFont;
+	color: wheat;
+	font-size: 30px;
+}
+
+.imageresize {
+	margin: auto;
 }
