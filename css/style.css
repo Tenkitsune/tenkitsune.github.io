@@ -5,30 +5,16 @@
 
 @font-face {
 	font-family: GanonFont;
-	src: url('../fonts/ReturnofGanon.ttf');
+	src: url('../fonts/CalamitySans/Calamity-Regular.woff');
 }
 
-/* Customize the navbar links to be fill the entire space of the .navbar */
-.navbar .navbar-inner {
-    padding: 0;
+.cust-nav{
+	background-color: #FEF9E7;
 }
 
-.navbar .nav {
-    margin: 0;
-    display: table;
-    width: 100%;
-}
-
-.navbar .nav li {
-    display: table-cell;
-    width: 1%;
-    float: none;
-}
-
-.navbar .nav li a {
-    font-weight: bold;
-    text-align: center;
-	color: green;
+.cust-nav .cust-nav-text {
+	font-weight: bold;
+	color: green !important;
 }
 
 body {
@@ -56,19 +42,20 @@ h1 {
 
 .separatorimg {
     display: block;
-	max-width: 100%;
-	height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .mainimg {
     display: block;
 	padding-top: 40px;
-	max-width: 100%
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .yellowborderdiv {
 	padding-top: 500px;
-	background: rgba(0, 0, 0, 0.25);
+	background: rgba(0, 0, 0, 0.50);
 	border: 15px solid transparent;
     padding: 15px;
     border-image:url('../images/yellowbordersmol.png') 41% stretch;
@@ -78,12 +65,34 @@ h1 {
 
 .greenborderdiv {
 	padding-top: 500px;
-	background: rgba(0, 0, 0, 0.25);
+	background: rgba(0, 0, 0, 0.50);
 	border: 15px solid transparent;
     padding: 15px;
     border-image:url('../images/greenbordersmol.png') 41% stretch;
 	-webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.woodborderdiv {
+	padding-top: 500px;
+	background: rgb(0, 0, 0);
+	border: 15px solid transparent;
+    padding: 15px;
+    border-image:url('../images/woodborder.png') 41% stretch;
+	-webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.custModalTop {
+	padding: 15px;
+}
+
+.custModalText {
+	text-align: center;
+}
+
+.custModalBodyText {
+	font-size: 30px;
 }
 
 .mapimg { 
@@ -105,15 +114,17 @@ h1 {
 }
 
 .fontent {
-	font-size: 25px;
+	font-size: 21px;
 }
 
-.leftdiv {
-	float: left;
-    width: 47%;
+@media (min-width: 768px) {
+	.custdiv {
+    	max-width: 47% !important;
+	}
 }
-.rightdiv {
-    margin-left: 53%;
+
+.custdiv {
+	margin-top: 50px !important;
 }
 
 .leftabouttitle {
@@ -130,4 +141,15 @@ h1 {
 
 .imageresize {
 	margin: auto;
+}
+
+.custom-footer {
+	color: #0B5345;
+	font-weight: bold;
+	background: rgba(255, 255, 255, 0.25);
+}
+
+.modal-custfooter {
+	display: flex;
+	justify-content: flex-end;
 }
