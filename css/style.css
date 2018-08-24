@@ -158,3 +158,13 @@ h1 {
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 }
+
+.linktext {
+	font-family: TriforceFont;
+	color: wheat;
+	font-size: 30px;
+}
+
+.linktext:hover {
+	color: #D3FFAC;
+}
